@@ -1,0 +1,82 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#eb7e81,#fad0c4);
+    text-align:center;
+    overflow-x:hidden;
+}
+
+.container{
+    margin-top:50px;
+}
+
+h1{
+    color:#ff0066;
+    font-size:45px;
+}
+
+h2{
+    color:#cc0066;
+}
+
+p{
+    font-size:22px;
+    color:#333;
+    padding:10px;
+}
+
+button{
+    padding:15px 35px;
+    font-size:20px;
+    border:none;
+    border-radius:10px;
+    background:#ff0066;
+    color:white;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+button:hover{
+    background:#cc0052;
+    transform:scale(1.05);
+}
+
+.slider{
+    margin:30px auto;
+}
+
+.slider img{
+    width:280px;
+    height:350px;
+    object-fit:cover;
+    border-radius:20px;
+    border:6px solid white;
+    box-shadow:0 0 20px rgba(0,0,0,0.4);
+}
+
+#msg{
+    color:#ff0066;
+    margin-top:25px;
+    font-size:28px;
+}
+
+/* Floating Hearts */
+body::before{
+    content:"❣️ 💐 🍃 💞 💕 💖 ❤️ ";
+    position:fixed;
+    top:-30px;
+    left:0;
+    width:100%;
+    font-size:28px;
+    animation:fall 8s linear infinite;
+}
+
+@keyframes fall{
+    from{
+        transform:translateY(-50px);
+    }
+    to{
+        transform:translateY(900px);
+    }
+}
